@@ -1,0 +1,27 @@
+<body>
+  <h3 class="dv">SIGN IN</h3>
+  <form [formGroup]="signInForm" (ngSubmit)="addUser()" class="dv">
+    <label for="name">User Name</label>
+    <br>
+    <input id="name" type="text" formControlName="name">
+    <br><br>
+    <label for="name">User Type</label>
+    <br>
+    <form id="form1">
+      <select width=300
+              style="width: 600px">
+        <option value='blue'>Admin</option>
+        <option value='green'>Baker</option>
+        <option value='' selected>Select Type of User</option>
+      </select>
+    </form>
+    <br><br>
+    <label for="pwd">Password</label>
+    <br>
+    <input type="password" id="pwd" formControlName="pwd">
+    <br><br>
+  <button >Sign In</button>
+  <br>
+  </form>
+  </body>
+

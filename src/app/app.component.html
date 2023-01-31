@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="app.component.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+<body>
+    <nav>
+      <div id="brand">
+        <img  src="../assets/Images/logonamu.png" alt="" srcset="" id="logo-app" />
+        <h1 > <a routerLink="/home-component"> Bread Basket</a></h1>
+      </div>
+      <div id="controls">
+        <div class="search-container">
+          <div>
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit" class="button" id="search">
+              <i class="fa fa-search"></i>
+           </button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Bread Categories
+              <i class="fa fa-caret-down"></i>
+               </button>
+               <div class="dropdown-content">
+                <a routerLink="/with-fillings-component">With Fillings Bread</a>
+                <a routerLink="/no-fillings-component">No Fillings Bread</a>
+              </div>
+        </div>
+        <!-- <div class="dropdown">
+          <button class="dropbtn">MENU
+              <i class="fa fa-caret-down"></i>
+               </button>
+               <div class="dropdown-content">
+                <a routerLink="/admin-component">Admin</a>
+                <a routerLink="/baker-component">Baker</a>
+                <a routerLink="/crud-component">CRUD</a>
+              </div>
+        </div> -->
+        <div class="shopping-basket">
+          <div>
+              <button type="submit" class="button" id="basket">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+               </button>
+          </div>
+        </div>
+        <div class="settings">
+          <div>
+              <button routerLink="/sign-up-component" type="submit" class="button" id="setting">
+                  <i  class="fa fa-gear"></i>
+               </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
+     <footer>
+       <div class="content">
+         <div class="left box">
+           <div class="upper">
+             <div class="topic">About us</div>
+             <p>We always assure that our bread will really satisfied your taste and make your stomach worry no more.</p>
+           </div>
+           <div class="lower">
+             <div class="topic">Contact us</div>
+             <div class="phone">
+               <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+             </div>
+             <div class="email">
+               <a href="#"><i class="fas fa-envelope"></i>breadbasket@gmail.com</a>
+             </div>
+           </div>
+         </div>
+         <div class="middle box">
+           <div class="topic">Our Services</div>
+           <div><a href="#">Sale and Deliver your Bread</a></div>
+         </div>
+         <div class="right box">
+           <div class="topic">Subscribe us</div>
+           <form action="#">
+             <input type="text" placeholder="Enter email address">
+             <input type="submit" name="" value="Send">
+             <div class="media-icons">
+               <a href="#"><i class="fab fa-facebook-f"></i></a>
+               <a href="#"><i class="fab fa-instagram"></i></a>
+               <a href="#"><i class="fab fa-twitter"></i></a>
+               <a href="#"><i class="fab fa-youtube"></i></a>
+               <a href="#"><i class="fab fa-linkedin-in"></i></a>
+             </div>
+           </form>
+         </div>
+       </div>
+       <div class="bottom">
+         <p>Copyright © 2020 <a href="#">BreadBasket</a> All rights reserved</p>
+       </div>
+     </footer>
+    </body>
+    </html>

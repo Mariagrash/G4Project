@@ -1,0 +1,58 @@
+body{
+  background-image: url(https://img.freepik.com/free-vector/brown-bread-bakery-realistic-with-different-tastes-bread-buns_1284-27859.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.dv {
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  height: 100%;
+  width: 50%;
+  margin: 5px;
+  border: 5px solid;
+  border-color:   --bs-orange #fd7e14;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  font-size: 20px;
+  background: rgba(245, 176, 97, 0.5);
+
+}
+button{
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+  color: blue;
+  padding: 5px;
+  width: 80%;
+  height: 50px;
+  border-radius: 6px;
+  margin: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+input{
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+h3.dv{
+  font-size: 50px;
+}
+select{
+  width: 80%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+

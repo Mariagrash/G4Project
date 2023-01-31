@@ -1,0 +1,35 @@
+<body>
+<div class="bg">
+  <h2>Create Account</h2>
+
+
+  <form action="signUpForm" (ngSubmit)="addUser" class="dv">
+    <label for="name">Name</label>
+    <br>
+    <input id="name" type="text" formControlName="name">
+    <br><br>
+    <label for="username">User Name</label>
+    <br>
+    <input id="username" type="text" formControlName="username">
+    <br><br>
+    <label for="age">Age</label>
+    <br>
+    <input id="age" type="text" formControlName="age">
+    <br><br>
+    <label for="address">Address</label>
+    <br>
+    <input id="address" type="text" formControlName="address">
+    <br><br>
+    <label for="pwd">Password</label>
+    <br>
+    <input type="password" id="pwd" formControlName="pwd">
+    <br><br>
+    <button >Sign Up</button>
+    <br>
+    <p>Already have an Account?<a routerLink="/sign-in-component"><br>Sign In</a></p>
+    <br>
+    </form>
+
+</div>
+</body>
+
