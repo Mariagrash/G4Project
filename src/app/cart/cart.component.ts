@@ -20,7 +20,6 @@ export class CartComponent implements OnInit {
 
   onClickAdd() {
 
-    // this.addToCart.push(details)
     console.log(
       { name: this.params.name, price: this.params.price, image: this.params.image, quantity: this.quantity }
     )
