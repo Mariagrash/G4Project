@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { BakerComponent } from './baker/baker.component';
 import { CRUDComponent } from './crud/crud.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
 
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path: 'home-component', component: HomeComponent},
   {path: 'admin-component', component: AdminComponent},
   {path: 'baker-component', component: BakerComponent},
-  {path: 'crud-component', component: CRUDComponent}
+  {path: 'crud-component', component: CRUDComponent},
+  {path: 'user-cart/:price/:image/:name', component: CartComponent}
 ];
 
 @NgModule({
